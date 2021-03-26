@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/ocean">
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:src="@drawable/fekalko_logo" />
+    <TextView
+            android:id="@+id/textAboutTbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_toRightOf="@id/logo"
+            android:text="@string/text_about"/>
+
+    <EditText
+            android:id="@+id/summaPredOplat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAboutTbo"
+            android:layout_toRightOf="@+id/logo"
+            android:padding="8dp"
+            android:textColor="@color/colorEditText"
+            android:inputType="numberDecimal"
+            android:text="7000" />
+
+    <TextView
+            android:id="@+id/textAboutTboPrice"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summaPredOplat"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:padding="8dp"
+            android:text="@string/price"
+            />
+
+    <EditText
+            android:id="@+id/priceTbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAboutTboPrice"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorEditText"
+            android:text="1400"/>
+    <TextView
+            android:id="@+id/itogPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/priceTbo"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Итого Откачек было оплачено"/>
+    <TextView
+            android:id="@+id/itogPayShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_below="@id/itogPay"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Здесь будет цифра или иконки"/>
+    <TextView
+            android:id="@+id/textAboutBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/itogPayShow"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:text="Итого Откачек осталось"/>
+    <TextView
+            android:id="@+id/itogBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/textAboutBalance"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:text="И здесь будет цифра or Picture"/>
+    <Button
+            android:id="@+id/raschet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itogBalance"
+            android:padding="16dp"
+            android:scaleType="center"
+            android:textColor="@color/colorWhite"
+            android:background="#0000"
+            android:paddingTop="25dp"
+            android:textAlignment="center"
+            android:text="Посчитать количество ходок"
+            />
+    <Button
+            android:id="@+id/minusHodka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/raschet"
+            android:padding="16dp"
+            android:scaleType="center"
+            android:textColor="@color/colorWhite"
+            android:background="#0000"
+            android:paddingTop="25dp"
+            android:textAlignment="center"
+            android:text="ЗаказатьОткачку"
+            />
+
+
+</RelativeLayout>

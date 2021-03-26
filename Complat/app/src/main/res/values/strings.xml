@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Complat</string>
+    <string name="text_about">Введите сумму предоплаты за вывоз ТБО:</string>
+    <string name="price"> Введите цену за одну откачку.</string>
+
+</resources>
