@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/ocean"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:cropToPadding="true"
+                android:src="@drawable/fekalko_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:text="@string/text_about"/>
+
+            <EditText
+                android:id="@+id/summaPredOplat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text=""/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorDefault"
+                android:text="@string/price"/>
+        <EditText
+                android:id="@+id/priceTbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDefault"
+            android:layout_weight="0"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Итого Откачек было оплачено"/>
+    <TextView
+            android:id="@+id/itogOplat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/colorDefault"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Здесь будет цифра"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDefault"
+            android:layout_weight="0"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:text="Итого Откачек осталось"/>
+    <TextView
+            android:id="@+id/itogOstatok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDefault"
+            android:layout_weight="0"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:text="И здесь будет цифра"/>
+    <Button
+            android:id="@+id/minusHodka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_weight="0"
+            android:paddingTop="25dp"
+            android:textAlignment="center"
+            android:text="ЗаказатьОткачку"
+            />
+
+</LinearLayout>

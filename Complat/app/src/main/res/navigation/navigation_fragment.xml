@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation_fragment"
+        app:startDestination="@id/titleFragment">
+
+    <fragment
+            android:id="@+id/titleFragment"
+            android:name="com.example.complat.title.TitleFragment"
+            android:label="fragment_title"
+            tools:layout="@layout/title_fragment" >
+        <action
+                android:id="@+id/action_titleFragment_to_energyFragment"
+                app:destination="@id/energyFragment" />
+        <action
+                android:id="@+id/action_titleFragment_to_tboFragment"
+                app:destination="@id/tboFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/tboFragment"
+            android:name="com.example.complat.tbo.TboFragment"
+            android:label="tbo_fragment"
+            tools:layout="@layout/tbo_fragment" >
+        <action
+                android:id="@+id/action_tboFragment_to_titleFragment"
+                app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/energyFragment"
+            android:name="com.example.complat.energy.EnergyFragment"
+            android:label="energy_fragment_"
+            tools:layout="@layout/energy_fragment_" >
+        <action
+                android:id="@+id/action_energyFragment_to_titleFragment"
+                app:destination="@id/titleFragment" />
+    </fragment>
+</navigation>

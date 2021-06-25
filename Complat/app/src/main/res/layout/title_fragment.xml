@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/tbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TBO"
+            app:layout_constraintBottom_toTopOf="@+id/energy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+            android:id="@+id/energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Energy"
+            app:layout_constraintBottom_toTopOf="@+id/garbage"
+            app:layout_constraintEnd_toEndOf="@+id/tbo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tbo"
+            app:layout_constraintTop_toBottomOf="@+id/tbo" />
+
+    <Button
+            android:id="@+id/garbage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garbage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/energy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/energy"
+            app:layout_constraintTop_toBottomOf="@+id/energy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
